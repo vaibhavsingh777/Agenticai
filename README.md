@@ -87,3 +87,28 @@ python scripts/index_data.py
 ```bash
 streamlit run app.py
 ```
+
+graph TD
+    %% User Entry
+    User((Student)) --> Router[("Agent 1: Intent Router")]
+    
+    %% Routing Logic
+    Router -- "TEACH_ME" --> Researcher["Agent 2: Wiki Researcher"]
+    Router -- "EVALUATE_ME" --> Critic["Agent 3: Feynman Critic"]
+    
+    %% Track A: Teaching
+    Researcher --> Teacher["Agent 4: Master Teacher"]
+    Teacher --> Output[("Tutor Response")]
+    
+    %% Track B: Feynman/Socratic
+    Critic --> Guide["Agent 5: Socratic Guide"]
+    Guide --> Output
+    
+    %% RAG Context Connection
+    DB[("FAISS Vector Store (Textbooks)")] -.-> Critic
+    DB -.-> Teacher
+    
+    %% Style adjustments for clarity
+    classDef agent fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef router fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    class Router router;
