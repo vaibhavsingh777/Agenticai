@@ -2,7 +2,7 @@
 
 Here I have tried to solve a simple probelm of making a **conversational AI tutor** powered by **LLaMA 3** (via [Ollama](https://ollama.com)) that can:
 
-- ✅ Answer questions from **PDF course books** (RAG) . You as a tutor or student can upload study material from your course content for example CS771 for passing your midsems :P !
+- ✅ Answer questions from **PDF course books** (RAG) . You as a tutor or student can upload study material from your course content for example CH225 for passing your midsems :P !
 - 🌐 Retrieve information from the **web** (DuckDuckGo) . Duh its needed if you wanna score above avg.
 - 📖 Pull facts from **Wikipedia**. Because one can never forget the OG wikipedia
 - 🧮 Perform **Python calculations and code execution** . Needed for actual coding probelms ( trust me you will get most of these in IITK courses)
