@@ -87,7 +87,7 @@ python scripts/index_data.py
 ```bash
 streamlit run app.py
 ```
-
+```
 graph TD
     %% User Entry
     User((Student)) --> Router[("Agent 1: Intent Router")]
@@ -112,3 +112,4 @@ graph TD
     classDef agent fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef router fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
     class Router router;
+```
