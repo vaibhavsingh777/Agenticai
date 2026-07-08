@@ -2,3 +2,4 @@
 *.ipynb_checkpoints/
 .lang/
 .DS_Store
+.env
