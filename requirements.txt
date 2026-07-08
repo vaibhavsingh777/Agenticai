@@ -1,0 +1,13 @@
+langchain==0.3.25
+langchain-community==0.3.25
+langchain-experimental==0.3.4
+ollama
+faiss-cpu
+huggingface_hub
+tqdm
+PyPDF2
+duckduckgo-search
+wikipedia
+streamlit
+langgraph
+pydantic
