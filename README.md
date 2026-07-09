@@ -1,20 +1,6 @@
 # 🤖 LLM Chat Tutor Agent
 
-Here I have tried to solve a simple probelm of making a **conversational AI tutor** powered by **LLaMA 3** (via [Ollama](https://ollama.com)) that can:
-
----
-
-## 🔧 Features
-| Feature               | Source                   | Method                             |
-|----------------------|--------------------------|------------------------------------|
-| Course Q&A           | Local PDF vector search  | FAISS + Sentence Embeddings (RAG) |
-| General Info         | DuckDuckGo Web Search    | LangChain Tool                     |
-| Factual Queries      | Wikipedia Search         | LangChain Tool                     |
-| Math/Programming     | Python Tool              | Python REPL                        |
-| Conversational Memory| Chat History             | LangChain Memory                   |
-| Math Formatting      | LaTeX                    | Streamlit LaTeX Renderer           |
-
-
+Here I have tried to solve a simple probelm of making a **conversational AI tutor** powered by **LLaMA 3** (via [Ollama](https://ollama.com))
 
 ## 🚀 Getting Started
 
