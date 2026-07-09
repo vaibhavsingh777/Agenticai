@@ -2,14 +2,6 @@
 
 Here I have tried to solve a simple probelm of making a **conversational AI tutor** powered by **LLaMA 3** (via [Ollama](https://ollama.com)) that can:
 
-- ✅ Answer questions from **PDF course books** (RAG) . You as a tutor or student can upload study material from your course content for example CH225 for passing your midsems :P !
-- 🌐 Retrieve information from the **web** (DuckDuckGo) . Duh its needed if you wanna score above avg.
-- 📖 Pull facts from **Wikipedia**. Because one can never forget the OG wikipedia
-- 🧮 Perform **Python calculations and code execution** . Needed for actual coding probelms ( trust me you will get most of these in IITK courses)
-- 🧠 Maintain **chat history and context** . Because a tutor learns your ways and history :) like most IIT Kanpur Profs!
-- 🧾 **Formatted equation rendering** using **LaTeX** 
-- A clean and interactive **Streamlit app interface**
-
 ---
 
 ## 🔧 Features
@@ -22,52 +14,7 @@ Here I have tried to solve a simple probelm of making a **conversational AI tuto
 | Conversational Memory| Chat History             | LangChain Memory                   |
 | Math Formatting      | LaTeX                    | Streamlit LaTeX Renderer           |
 
----
 
-## 📁 Directory Structure
-```
-ollama_chat-tutor-agent_project/
-├── agents/
-│ └── chat_agent.py # Main conversational agent setup
-├── data/
-│ ├── raw_pdfs/ # PDF books or materials
-│ └── db/ # FAISS vector store (auto-created)
-├── retriever/
-│ ├── vector_store.py # FAISS-based PDF retriever
-│ └── web_retrievers.py # Web + Wikipedia retrievers
-├── scripts/
-│ ├── index_data.py # Index PDF content into vector store
-│ └── chat_loop.py # CLI chatbot loop
-├── app.py # 🔥 Streamlit UI app
-├── requirements.txt # Python dependencies
-└── README.md # This file
-```
-## Project Architecture
-```
-        ┌────────────┐
-        │ User Input │
-        └─────┬──────┘
-              │
-              ▼
-     ┌────────────────────---------------------------┐
-     │  Conversational Agent (LLaMA3.2)              │
-     └────┬─────────────┬────--──────----------------┘
-          │             │             │             │
-          ▼             ▼             ▼             ▼
- ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌──────────────┐
- │ PDF Search  │ │ Web Search  │ │ Wikipedia   │ │ Python REPL  │
- │ (FAISS RAG) │ │ (DuckDuckGo)│ │ Retriever   │ │   Code Exec. │
- └─────────────┘ └─────────────┘ └─────────────┘ └──────────────┘
-          │             │                 │           │
-          └─────────────┴─────────────────┴───────────┘
-                        │
-                        ▼
-              ┌────────────────────┐
-              │ Generated Response │
-              └────────────────────┘
-
-```
----
 
 ## 🚀 Getting Started
 
